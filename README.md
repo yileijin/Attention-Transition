@@ -19,6 +19,13 @@ model = AutoModelForCausalLM.from_pretrained("huggyllama/llama-7b").cuda().eval(
 The xsum dataset is also available at 🤗 Datasets. The data we used to generate has released in file: /generation_results/, as well as 
 all generation results together with the gpt4 evaluations
 
+### Generation
+
+The /model_generation.ipynb is for model generation.
+Things to remember: set the parameter with True to implement our technique in the line 820 in our modeling_llama.py
+```bash
+attn_transition: Optional[bool] = True
+```
 ### Evaluation
 
 The evaluation is all conducted on GPT4, with a fixed prompt that defined in our /evaluation/evaluation.ipynb, you can check for detail.
