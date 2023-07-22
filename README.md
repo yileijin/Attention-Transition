@@ -16,7 +16,7 @@ tokenizer = AutoTokenizer.from_pretrained("huggyllama/llama-7b")
 model = AutoModelForCausalLM.from_pretrained("huggyllama/llama-7b").cuda().eval().half()
 ```
 
-The xsum dataset is also available at 🤗 Datasets. The data we used to generate has released in file: /generation_results/, as well as 
+The xsum dataset is also available at 🤗 Datasets. The data we used to generate has released in file: /evaluation/, as well as 
 all generation results together with the gpt4 evaluations
 
 ### Generation
@@ -29,6 +29,8 @@ attn_transition: Optional[bool] = True
 ### Evaluation
 
 The evaluation is all conducted on GPT4, with a fixed prompt that defined in our /evaluation/evaluation.ipynb, you can check for detail.
+The scores present in paper are all generated from /evaluation/get_scores.ipynb
+files end with .json are our results
 
 Welcome to post an issue or send me an email if there are any questions
 email: yilei.jin123@gmail.com
