@@ -16,7 +16,8 @@ tokenizer = AutoTokenizer.from_pretrained("huggyllama/llama-7b")
 model = AutoModelForCausalLM.from_pretrained("huggyllama/llama-7b").cuda().eval().half()
 ```
 
-The xsum dataset is also available at 🤗 Datasets. The data we used to generate has released in file generation_results.
+The xsum dataset is also available at 🤗 Datasets. The data we used to generate has released in file: /generation_results/, as well as 
+all generation results together with the gpt4 evaluations
 
 ### Evaluation
 
