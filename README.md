@@ -32,7 +32,7 @@ The evaluation is all conducted on GPT4, with a fixed prompt that defined in our
 The scores present in paper are all generated from /evaluation/get_scores.ipynb
 files end with .json are our results
 
-Welcome to post an issue or send me an email if there are any questions
+Welcome to post an issue or send me an email if there are any questions.
 email: yilei.jin123@gmail.com
 
 ### Citation
