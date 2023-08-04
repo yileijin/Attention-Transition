@@ -29,7 +29,7 @@ attn_transition: Optional[bool] = True
 
 The evaluation is all conducted on GPT4, with a fixed prompt that defined in our "/evaluation/evaluation.ipynb", you can check for detail.
 The scores present in paper are all generated from "/evaluation/get_scores.ipynb".
- Files end with .json are our results
+ Files end with ".json" are our results
 
 Welcome to post an issue or send me an email if there are any questions.
 email: yilei.jin123@gmail.com
